@@ -1,0 +1,152 @@
+@use '../abstracts/variables' as *;
+
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+        padding: 0 15px;
+        width: 100%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    padding: 0 15px;
+
+    @media (max-width: 768px) {
+        flex: 0 0 100%;
+    }
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.marked-text {
+    position: relative;
+    z-index: 2;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 90%;
+        height: 40%;
+        background-color: $yellow;
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.section {
+    &-primary {
+        background-color: $primary;
+        color: $black;
+    }
+
+    &-secondary {
+        background-color: $gray;
+        color: $white;
+    }
+}
+
+.smile-star-element {
+    display: inline-block;
+    transform: rotate(55deg);
+    box-shadow: 16px 16px 0 0 rgba($color: $black, $alpha: 0.25);
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.card {
+    background-color: $white;
+    position: relative;
+    padding: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 6px;
+        width: calc(100% - 12px);
+        height: 8px;
+        background-color: $white;
+    }
+
+    .line {
+
+        &-top,
+        &-bottom,
+        &-right,
+        &-left {
+            position: absolute;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        &-top,
+        &-bottom,
+        &-left {
+            box-shadow: -6px 6px 0 0 rgba($color: $black, $alpha: 0.4);
+        }
+
+        &-top,
+        &-bottom {
+            width: calc(100% + 30px);
+            height: 6px;
+            background-color: $black;
+            left: -15px;
+        }
+
+        &-right,
+        &-left {
+            width: 6px;
+            height: calc(100% + 30px);
+            background-color: $black;
+            top: -15px;
+        }
+
+        &-top {
+            top: 0;
+        }
+
+        &-bottom {
+            bottom: 0;
+        }
+
+        &-right {
+            right: 0;
+        }
+
+        &-left {
+            left: 0;
+        }
+    }
+}

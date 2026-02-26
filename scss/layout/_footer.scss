@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+    padding: 60px 0;
+    border-top: 4px solid $black;
+
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                width: 40px;
+            }
+
+            span {
+                font-size: 36px;
+                color: $gray;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-site-title {
+        font-size: 32px;
+        color: $gray;
+        font-weight: 500;
+    }
+
+    &-socials {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}

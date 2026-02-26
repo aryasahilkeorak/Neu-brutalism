@@ -1,0 +1,126 @@
+/* 
+This file includes CSS reset styles to ensure consistent rendering across different browsers by removing default browser styles. 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+  border-top: 1px solid;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  bottom: 0.25em;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: 0.25em;
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:-moz-focus,
+[type=button]:-moz-focus,
+[type=reset]:-moz-focus,
+[type=submit]:-moz-focus {
+  outline: 1px dotted ButtonText;
+}
+
+input {
+  overflow: visible;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

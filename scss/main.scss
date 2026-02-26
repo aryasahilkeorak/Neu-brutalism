@@ -1,0 +1,12 @@
+// This file serves as the main entry point for compiling SCSS styles into CSS.
+// It imports all other SCSS files in the project.
+
+@use 'abstracts/variables';
+@use 'base/reset';
+@use 'base/fonts';
+@use 'components/button';
+@use 'components/commmon';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'pages/home';
+@use 'themes/theme';
